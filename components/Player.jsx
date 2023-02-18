@@ -2,7 +2,7 @@ import React from "react";
 
 function Player() {
   return (
-    <div className="flex flex-row justify-center align-middle">
+    <div className=" min-w-fit flex flex-row justify-center align-middle">
       <div className="flex flex-row">
         <input
           type="text"
@@ -13,7 +13,9 @@ function Player() {
           Search
         </button>
       </div>
-      <div></div>
+      <div className=" max-w-xs">
+        
+      </div>
     </div>
   );
 }
