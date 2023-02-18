@@ -5,7 +5,7 @@ function Login() {
   
   return (
     <div className="flex flex-col items-center justify-center ">
-      <div className="  cursor-pointer" onClick={() => signIn()}>
+      <div className="  cursor-pointer" onClick={() => signIn('google')}>
         <YoutubeSVG />
       </div>
       <div>
