@@ -1,11 +1,15 @@
 import { useSession, signOut } from "next-auth/react";
 import Login from "@/components/Login";
 import Navbar from "@/components/Navbar";
-import Player from "@/components/Player"
+
+import SearchBar from "@/components/SeacrhBar";
 
 export default function Home() {
   const { data: session } = useSession();
   const { data } = useSession();
+
+  console.log(session)
+  console.log(data)
   return (
     <>
       {!session && (
@@ -29,7 +33,7 @@ export default function Home() {
           <Navbar signOut={signOut} dataSession={session} data={data} />
           <br/>
           <br/>
-          <Player />
+          <SearchBar />
         </div>
       )}
     </>
