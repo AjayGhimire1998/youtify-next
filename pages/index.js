@@ -2,7 +2,7 @@ import { useSession, signOut } from "next-auth/react";
 import Login from "@/components/Login";
 import Navbar from "@/components/Navbar";
 
-import SearchBar from "@/components/SeacrhBar";
+import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
 
@@ -28,9 +28,6 @@ export default function Home() {
           <div>
             <Login />
           </div>
-          <br/>
-          <br/>
-          <p className="text-red-500 text-8xl font-semibold"> COMING UP SOON.....</p>
         </div>
       )}
       {session && (

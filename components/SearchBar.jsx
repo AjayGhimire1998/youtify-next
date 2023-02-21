@@ -13,7 +13,7 @@ function SearchBar() {
     console.log(searchedData)
   };
   return (
-    <div className=" min-w-fit flex flex-row justify-center align-middle">
+    <div className=" flex flex-col place-items-center align-middle">
       <div className="flex flex-row">
         <input
           type="text"
@@ -28,9 +28,11 @@ function SearchBar() {
           Search
         </button>
       </div>
-      <div className="">
+      <div className="  h-screen">
         {/* <video src={`https://www.youtube.com/watch?v=`} */}
-        
+        <br/>
+          <br/>
+          <p className="text-red-500 text-8xl font-semibold"> 🛠️ Under Construction</p>
       </div>
     </div>
   );
