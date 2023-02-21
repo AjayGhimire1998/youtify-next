@@ -5,11 +5,13 @@ import Navbar from "@/components/Navbar";
 import SearchBar from "@/components/SeacrhBar";
 
 export default function Home() {
+
+  
   const { data: session } = useSession();
-  const { data } = useSession();
+  // const { data } = useSession();
 
   console.log(session)
-  console.log(data)
+  // console.log(data)
   return (
     <>
       {!session && (
@@ -33,7 +35,7 @@ export default function Home() {
       )}
       {session && (
         <div>
-          <Navbar signOut={signOut} dataSession={session} data={data} />
+          <Navbar signOut={signOut} dataSession={session}/>
           <br/>
           <br/>
           <SearchBar />

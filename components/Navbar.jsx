@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "../public/logo.png";
-function Navbar({ signOut, dataSession, data }) {
+function Navbar({ signOut, dataSession }) {
   return (
     <div className=" flex flex-row justify-around mt-5">
       <div>

@@ -1,3 +1,4 @@
+/* fetches data of searched title */
 export const getVideoBySearch = (title) => {
   console.log(process.env.NEXT_PUBLIC_API_KEY);
   fetch(
