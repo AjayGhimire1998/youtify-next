@@ -26,6 +26,9 @@ export default function Home() {
           <div>
             <Login />
           </div>
+          <br/>
+          <br/>
+          <p className="text-red-500 text-8xl font-semibold"> COMING UP SOON.....</p>
         </div>
       )}
       {session && (
@@ -34,6 +37,7 @@ export default function Home() {
           <br/>
           <br/>
           <SearchBar />
+          
         </div>
       )}
     </>

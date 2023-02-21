@@ -1,5 +1,11 @@
 export const getVideoBySearch = (title) => {
-    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${title}&type=video&key=${process.env.YOUTUBE_API_KEY}`)
+  console.log(process.env.NEXT_PUBLIC_API_KEY);
+  fetch(
+    `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${title}&type=audio&key=${process.env.NEXT_PUBLIC_API_KEY}`
+  )
     .then((res) => res.json())
-    .then((data) => console.log(data))
-}
+    .then((data) => {
+      console.log(data);
+      return data;
+    });
+};
